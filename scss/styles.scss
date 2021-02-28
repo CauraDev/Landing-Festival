@@ -26,7 +26,7 @@ body {
         bottom: 0;
         width: 100%;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.85);
+        background-color: rgba(0, 0, 0, 0.81);
         //mix-blend-mode: darken;
         z-index: -1;
 
@@ -36,24 +36,67 @@ body {
         font-family: $font;
     }
 
+    .text_shadow{
+        font-weight: bold;
+        text-shadow: black 2px 5px;
+
+    }
+    
+
     #h1_date{
         background-color: none;
-        font-size: 50px;
-        border: 1px dashed $color1;
+        font-size: 55px;
+        //border: 1px dashed $color1;
         display: flex;
         justify-content: center;
         align-items: center;
+
 
     }
 
     #slogan_section{
         #slogan_message{
-            border: 1px dashed $color1;
+            //border: 1px dashed $color1;
+            font-size: 15px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin: 1px;
+            padding: 1px;
+    
+            
 
         }
 
         #slogan_hashtag{
-            border: 1px dashed $color1;
+            //border: 1px dashed $color1;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            padding: 1px;
+            margin:0.67em;
+
+    
+
+        }
+        #slogan_button-container{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #slogan_button{
+            background-color: transparent;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid white;
+            font-size: 20px;
+            padding:5px;
 
         }
     }
