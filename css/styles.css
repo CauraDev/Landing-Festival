@@ -1,0 +1,46 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.background {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../assets/images/oasis_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: -2;
+}
+.background:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: -1;
+}
+.background .white_text {
+  color: #fff;
+  font-family: "helvetica";
+}
+.background #h1_date {
+  background-color: none;
+  font-size: 50px;
+  border: 1px dashed #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background #slogan_section #slogan_message {
+  border: 1px dashed #fff;
+}
+.background #slogan_section #slogan_hashtag {
+  border: 1px dashed #fff;
+}
+
+/*# sourceMappingURL=styles.css.map */
