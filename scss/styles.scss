@@ -1,4 +1,10 @@
-$color1: #fff;
+$color1:#F1FAEE;  //Date
+$color2: #1D3557; //Background
+$color3:#E63946;  //Button
+$color4: #F1FAEE; //Text
+$color5: #F1FAEE; //Hashtag
+
+
 $font: "helvetica";
 
 body {
@@ -17,6 +23,9 @@ body {
     background-position: center;
     position: absolute;
     z-index: -2;
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(6, 1fr);
 
     &:before{
         content: "";
@@ -26,13 +35,13 @@ body {
         bottom: 0;
         width: 100%;
         height: 100vh;
-        background-color: rgba(0, 0, 0, 0.81);
-        //mix-blend-mode: darken;
+        background-color: $color2;
+        opacity: 1;
+        mix-blend-mode: multiply;
         z-index: -1;
 
     }
-    .white_text{
-        color: $color1;
+    .font_text{
         font-family: $font;
     }
 
@@ -50,26 +59,26 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-
-
+        grid-row-start: 1;
+        grid-row-end: 1;
+        color: $color1;
     }
 
-    #slogan_section{
-        #slogan_message{
-            //border: 1px dashed $color1;
-            font-size: 15px;
-            display: flex;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            margin: 1px;
-            padding: 1px;
-    
-            
+    #slogan_message{
+    //border: 1px dashed $color1;
+    font-size: 15px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+    padding: 1px;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    color: $color4;
+    }
 
-        }
-
-        #slogan_hashtag{
+    #slogan_hashtag{
             //border: 1px dashed $color1;
             font-size: 40px;
             display: flex;
@@ -78,27 +87,46 @@ body {
             margin: 5px;
             padding: 1px;
             margin:0.67em;
-
-    
-
+            margin-bottom: 1em;
+            grid-row-start: 3;
+            grid-row-end: 3;
+            color: $color5;
         }
-        #slogan_button-container{
-            display:flex;
-            justify-content: center;
-            align-items: center;
-        }
-
+    #button_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        
         #slogan_button{
             background-color: transparent;
             overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 2px solid white;
+            border: 2px solid $color3;
             font-size: 20px;
             padding:5px;
+            color: $color3;
+        }
+
+    }
+    #social_media-container{
+        //background-color: red;
+        width:100%;
+        grid-row-start: 5;
+        grid-row-end: 5;
+
+
+        #social_media{
+            list-style: none;
+            display: flex;
+            width: 80vw;
+            justify-content: space-around;
+            //background-color: green;
+            color: $color3;
+            
 
         }
+        
     }
 
 }
