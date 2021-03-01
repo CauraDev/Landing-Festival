@@ -89,7 +89,7 @@ body {
 }
 .background #button_container #slogan_button:hover {
   color: #F1FAEE;
-  border: 2px solid #E63946;
+  border: 2px solid #F1FAEE;
 }
 .background #social_media-container #social_media {
   list-style: none;
@@ -107,7 +107,7 @@ body {
 .background #social_media-container #social_media .social_media-icon:hover {
   color: #F1FAEE;
 }
-@media (min-width: 760px) {
+@media (min-width: 760px) and (max-width: 1024px) {
   .background #h1_date {
     font-size: 60px;
   }
@@ -123,6 +123,24 @@ body {
   }
   .background #social_media-container #social_media {
     width: 85vw;
+  }
+}
+@media (min-width: 1024px) {
+  .background #h1_date {
+    font-size: 65px;
+  }
+  .background #slogan_message {
+    font-size: 25px;
+  }
+  .background #slogan_hashtag {
+    font-size: 50px;
+  }
+  .background #button_container #slogan_button {
+    font-size: 30px;
+    padding: 10px;
+  }
+  .background #social_media-container #social_media {
+    width: 95vw;
   }
 }
 

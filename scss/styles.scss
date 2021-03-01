@@ -55,7 +55,6 @@ body {
     #h1_date{
         background-color: none;
         font-size: 55px;
-        //border: 1px dashed $color1;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -65,7 +64,6 @@ body {
     }
 
     #slogan_message{
-    //border: 1px dashed $color1;
     font-size: 15px;
     display: flex;
     text-align: center;
@@ -79,7 +77,6 @@ body {
     }
 
     #slogan_hashtag{
-            //border: 1px dashed $color1;
             font-size: 40px;
             display: flex;
             justify-content: center;
@@ -109,13 +106,12 @@ body {
             box-shadow: 2px 2px black;
             &:hover{
                 color: $color1;
-                border: 2px solid $color3;
+                border: 2px solid $color1;
             }
         }
 
     }
     #social_media-container{
-        //background-color: red;
 
 
         #social_media{
@@ -140,7 +136,10 @@ body {
         }
         
     }
-    @media (min-width: 760px){
+
+
+// 760px RESPONSIVE
+    @media (min-width: 760px) and (max-width: 1024px){
         #h1_date{
             font-size: 60px;
         }
@@ -156,16 +155,38 @@ body {
                 padding: 8px;
             }
         }
-            #social_media-container{
-                #social_media{
-                    width: 85vw;
-                }
+        #social_media-container{
+            #social_media{
+                width: 85vw;
             }
-            
-    
+        }
     
     }
-    
+
+    @media (min-width: 1024px){
+        #h1_date{
+            font-size: 65px;
+        }
+        #slogan_message{
+            font-size: 25px;
+        }
+        #slogan_hashtag{
+            font-size: 50px;
+        }
+        #button_container{
+            #slogan_button{
+                font-size: 30px;
+                padding: 10px;
+            }
+        }
+        #social_media-container{
+            #social_media{
+                width: 95vw;
+            }
+        }
+   
+    }    
+
 
 }
 
