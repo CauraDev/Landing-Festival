@@ -91,16 +91,10 @@ body {
   color: #F1FAEE;
   border: 2px solid #E63946;
 }
-.background #social_media-container {
-  width: 100%;
-  grid-row-start: 5;
-  grid-row-end: 5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .background #social_media-container #social_media {
   list-style: none;
+  grid-row-start: 5;
+  grid-row-end: 5;
   display: flex;
   width: 80vw;
   height: 100%;
@@ -112,6 +106,24 @@ body {
 }
 .background #social_media-container #social_media .social_media-icon:hover {
   color: #F1FAEE;
+}
+@media (min-width: 760px) {
+  .background #h1_date {
+    font-size: 60px;
+  }
+  .background #slogan_message {
+    font-size: 20px;
+  }
+  .background #slogan_hashtag {
+    font-size: 45px;
+  }
+  .background #button_container #slogan_button {
+    font-size: 25px;
+    padding: 8px;
+  }
+  .background #social_media-container #social_media {
+    width: 85vw;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

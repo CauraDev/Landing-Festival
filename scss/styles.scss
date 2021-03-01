@@ -116,16 +116,12 @@ body {
     }
     #social_media-container{
         //background-color: red;
-        width:100%;
-        grid-row-start: 5;
-        grid-row-end: 5;
-        display:flex;
-        justify-content: center;
-        align-items: center;
 
 
         #social_media{
             list-style: none;
+            grid-row-start: 5;
+            grid-row-end: 5;
             display: flex;
             width: 80vw;
             height:100%;
@@ -144,8 +140,36 @@ body {
         }
         
     }
+    @media (min-width: 760px){
+        #h1_date{
+            font-size: 60px;
+        }
+        #slogan_message{
+            font-size: 20px;
+        }
+        #slogan_hashtag{
+            font-size: 45px;
+        }
+        #button_container{
+            #slogan_button{
+                font-size: 25px;
+                padding: 8px;
+            }
+        }
+            #social_media-container{
+                #social_media{
+                    width: 85vw;
+                }
+            }
+            
+    
+    
+    }
+    
 
 }
 
-//@media (max-width: )
+    
+
+
 
